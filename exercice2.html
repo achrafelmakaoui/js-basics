@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE2</title>
+</head>
+<body>
+    <script>
+        function hjms() {
+            let entre = prompt("Une durée en secondes :");
+            let temps = parseInt(entre);
+
+            let jours = Math.floor(temps / 86400);
+            let resteSecondes = temps % 86400;
+
+            let heures = Math.floor(resteSecondes / 3600);
+            resteSecondes = resteSecondes % 3600;
+
+            let minutes = Math.floor(resteSecondes / 60);
+            let secondes = resteSecondes % 60;
+
+            let output = jours + " jours " + heures + " heures " + minutes + " minutes " + secondes + " secondes";
+            console.log(output);
+        }
+        hjms();
+    </script>
+</body>
+</html>

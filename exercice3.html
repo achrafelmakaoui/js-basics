@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE3</title>
+</head>
+<body>
+    <script>
+        function troisNombres() {
+            let entre1 = prompt("1er nombre :");
+            let nombre1 = parseFInt(entre1);
+
+            let entre2 = prompt("2ème nombre :");
+            let nombre2 = parseInt(entre2);
+
+            let entre3 = prompt("3ème nombre :");
+            let nombre3 = parseInt(entre3);
+
+            let nombre = [entre1, entre2, entre3];
+            nombre.sort();
+
+            let output = "les nombres dans l'ordre croissant :" + nombre[0] + " " + nombre[1] + " " + nombre[2];
+            console.log(output);
+        }
+        troisNombres();
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE4</title>
+</head>
+<body>
+    <script>
+        function triangle1() {
+            let entre = prompt("Un motif de taille:");
+            let taille = parseInt(entre);
+
+            let etoiles = ""; 
+            let newTaille = 1;
+
+            while (newTaille <= taille) {
+                etoiles = etoiles + "*"; 
+                console.log(etoiles);
+                newTaille++;
+            }
+        }
+
+        triangle1();
+    </script>
+</body>
+</html>

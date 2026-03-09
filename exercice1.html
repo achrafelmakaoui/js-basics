@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE1</title>
+</head>
+<body>
+    <script>
+        function degreC() {
+            let entre = prompt("Une température en Fahrenheit :");
+            let tempF = parseFloat(entre);
+
+            let tempC= (5 / 9) * (tempF - 32);
+
+            let output = "Cette température équivant a degrés " + tempC.toFixed(2) + " Celsins"
+            console.log(output);
+        }
+        degreC();
+    </script>
+</body>
+</html>
