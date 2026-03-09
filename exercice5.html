@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE5</title>
+</head>
+<body>
+    <script>
+        function premier() {
+            let entre = prompt("Un entier positif:");
+            let entier = parseInt(entre);
+
+            let estPremier = true;
+            let diviseur;
+
+            for (let i = 2; i < entier; i++) {
+                if( entier % i === 0){
+                    estPremier = false;
+                    diviseur = i;
+                }
+            }
+
+            if (estPremier) {
+                console.log(entier + " est un nombre premier")
+            }
+            else {
+                console.log(entier + " n'est pas un nombre premier, il est divisible par " + diviseur)
+            }
+        }
+
+        premier();
+    </script>
+</body>
+</html>
