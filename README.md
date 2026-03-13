@@ -129,7 +129,7 @@ Input  : 25  → 25 n'est pas un nombre premier, il est divisible par 5
 ---
 
 ### Exercise 6 — Fibonacci Sequence (`exercice6.html`)
-The Fibonacci sequence: `u₀ = 0, u₁ = 1, uₙ₊₁ = uₙ + uₙ₋₁`
+The Fibonacci sequence: `U0 = 0, U1 = 1, Un+1 = Un + Un-1`
 
 - **`fibo1()`** — computes the **nth term** of the sequence
 - **`fibo2()`** — finds the **first term greater than** a given value and its rank
@@ -145,8 +145,8 @@ Output : Premier terme > 50 : u(11) = 89
 ### Exercise 7 — Square Root Approximation (`exercice7.html`)
 Approximates **√A** using the formula:
 ```
-u₀ = A/2
-uₙ₊₁ = ½ × (uₙ + A/uₙ)
+U0 = A/2
+Un+1 = 1/2 × (Un + A/Un)
 ```
 Stops when `|uₙ² − A| < 0.0001`
 
