@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4 - EXERCICE6</title>
+</head>
+<body>
+    <script>
+        // function fibo1() {
+        //     let entre = prompt("Entrez n:");
+        //     let n = parseInt(entre);
+
+        //     let u0 = 0;
+        //     let u1  = 1;
+
+        //     for (let i = 2; i <= n; i++) {
+        //         let temp = u0 + u1;
+        //         u0 = u1;
+        //         u1 = temp;
+        //     }
+
+        //     if (n === 0) {
+        //         console.log(0)
+        //     } 
+        //     else if (n === 1) {
+        //         console.log(1)
+        //     } 
+        //     else {
+        //         console.log(u1)
+        //     };
+        // }
+        // fibo1();
+
+        function fibo2() {
+            let entre = prompt("Entrez n:");
+            let n = parseInt(entre);
+
+            let u0 = 0;
+            let u1  = 1;
+            let rang = 1;
+
+            while (u1 <= n) {
+                let temp = u0 + u1;
+                u0 = u1;
+                u1 = temp;
+                rang++;
+            }
+
+            if (n === 0) {
+                console.log(0)
+            } else if (n === 1) {
+                console.log(1)
+            } else{
+                console.log(`Premier terme > ${n} : u(${rang}) = ${u1}`);
+            };
+        }
+        fibo2();
+    </script>
+</body>
+</html>
